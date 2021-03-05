@@ -1,0 +1,24 @@
+<html>
+
+<body>
+<input type="number" placeholder="Введите число" id="number">
+<button id="number_button"> ОК </button>
+
+<script type="text/javascript">
+const checkNumber = function() {
+	let value = document.getElementById("number").value;
+	let parsed = parseInt(value,  10);
+	if (!isNaN(parsed) && parsed > 7) {
+		alert("Привет");
+	} else {
+		alert("Меньше или равно 7");
+	};
+};  
+
+let numberButton = document.getElementById("number_button");
+numberButton.addEventListener("click",  checkNumber);
+</script>
+
+</body>
+
+</html>

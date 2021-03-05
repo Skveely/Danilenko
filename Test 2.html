@@ -1,0 +1,24 @@
+﻿<html>
+
+<body>
+<input type="text" placeholder="Введите имя" id="name">
+<button id="name_button"> ОК </button>
+
+<script type="text/javascript">
+const checkName = function() {
+	const validValue = "вячеслав";
+	let value = document.getElementById("name").value;
+	if (typeof value === "string" && value.toLowerCase() === validValue) {
+		alert("Привет Вячеслав");
+	} else {
+		alert("Нет такого имени");
+	};
+};  
+
+let nameButton = document.getElementById("name_button");
+nameButton.addEventListener("click",  checkName);
+</script>
+
+</body>
+
+</html>
